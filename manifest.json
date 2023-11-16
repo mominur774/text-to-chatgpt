@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Text to ChatGPT",
+    "version": "1.0",
+    "description": "Copy text and redirect to ChatGPT and past the text as prompt",
+    "permissions": [
+        "contextMenus"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://chat.openai.com/*"],
+            "js": ["src/content.js"]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    }
+}
