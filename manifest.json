@@ -6,6 +6,11 @@
     "permissions": [
         "contextMenus"
     ],
+    "icons": {
+        "16": "copyandredirect.png",
+        "48": "copyandredirect.png",
+        "128": "copyandredirect.png"
+    },
     "content_scripts": [
         {
             "matches": ["https://chat.openai.com/*"],
